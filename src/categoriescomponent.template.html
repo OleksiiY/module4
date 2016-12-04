@@ -1,0 +1,7 @@
+<h4><a ui-sref="home">Go Back to Home Page</a></h4>
+<h4>Categories listed below:</h4>
+<ul>
+  <li ng-repeat="item in $ctrl.items">
+    <a ui-sref="items({category: item.short_name})">{{item.short_name}}<strong>->{{item.name}}</strong></a>
+  </li>
+</ul>
